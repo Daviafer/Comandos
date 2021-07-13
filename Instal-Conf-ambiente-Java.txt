@@ -1,0 +1,26 @@
+-----JAVA-----
+
+Após baixar JDK (salvando em outro disco)
+
+sudo gedit .bashrc
+
+export JAVA_HOME=/media/user/Dados/DaviF/EstudoJAVA/OpenJDK-16
+export PATH=$PATH:$JAVA_HOME/bin
+
+FECHAR TERMINAL OU ATUALIZAR COM :
+
+source .bashrc
+
+DICA:
+no arquivo ~/.profile ou mesmo ~/.bashrc (vale apenas pro seu usuário), no /etc/profile ou mesmo /etc/bash.bashrc (vale pra todos os usuários).
+após editar um desses arquivos você precisa fazer logoff e login novamente ou recarregar o ambiente alterado: source <arquivo alterado>
+
+
+-----ECLIPSE-----
+
+Precisa instalar puglin pra rodar o JDK versão 16.
+
+menu: help / market place / java 16 
+
+
+
