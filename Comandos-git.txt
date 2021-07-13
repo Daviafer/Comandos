@@ -1,0 +1,25 @@
+Após instalação configurar email e nome
+git config --global
+
+Git init = iniciar repositório
+git add "nome arquivo" = adicionar 
+git commit -m "mensagem" = comite com mensagem até o repositório
+git commit -am "mensagem" = adicionando e comitando 
+git status = verificar arquivos
+git log = verificar mudanças commit
+git show (código do comite) = verificar através do código o commit
+
+ls -al = verificar todos arquivos no local
+
+git branch (nome da branch) = outro local, outra linha tempo (ramificação)
+git checkout (nome da branch) = mudando pra outra branch na linha do tempo
+git checkout (código commit) --(nome do arquivo = restaurando linha tempo do arquivo) 
+git merge (nome da branch) = Une arquivos de outra branch ao projeto master
+git branch -D (nome da branch) = deletando branch
+
+git remote add origin (endereço https) = usando o GitHub
+git push -u origin master  = jogando arquivo locais pro github (repositório remoto)
+
+git clone (endereço) = clonando algum projeto já criado
+
+git pull = atualizando o local (importante na área de vários desenvolvedores)
