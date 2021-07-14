@@ -23,3 +23,20 @@ Precisa instalar puglin pra rodar o JDK versão 16.
 menu: help / market place / java 16 
 
 
+-----GRADLE-----
+
+Após baixar, descompactar o Gradle (salvando em outro disco)
+
+sudo gedit .bashrc
+
+export GRADLE_HOME=/media/user/Dados/DaviF/EstudoJAVA/gradle-bin-7.0/bin
+export PATH=/media/user/Dados/DaviF/EstudoJAVA/gradle-bin-7.0/bin:${PATH}
+
+OUTRA FORMA (mais simples, talvez)
+
+baixar arquivo webste oficial
+mkdir /opt/gradle = criando pasta no diretório /opt/
+abrir local que está o programa baixado
+unzip -d /opt/gradle gradle-7.0-bin.zip (ou a versão baixada)  = extrair e colocar aquivos na pasta criada
+ls /opt/gradle/gradle-7.0  = listar aquivos
+export PATH=$PATH:/opt/gradle/gradle-7.0/bin = exportando arquivos do /bin pro PATH
