@@ -19,6 +19,7 @@ git branch -D (nome da branch) = deletando branch
 
 git remote add origin (endereço https) = usando o GitHub
 git push -u origin master  = jogando arquivo locais pro github (repositório remoto)
+git push
 
 git clone (endereço) = clonando algum projeto já criado
 
