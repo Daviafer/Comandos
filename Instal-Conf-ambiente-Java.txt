@@ -40,3 +40,11 @@ abrir local que está o programa baixado
 unzip -d /opt/gradle gradle-7.0-bin.zip (ou a versão baixada)  = extrair e colocar aquivos na pasta criada
 ls /opt/gradle/gradle-7.0  = listar aquivos
 export PATH=$PATH:/opt/gradle/gradle-7.0/bin = exportando arquivos do /bin pro PATH
+
+
+------MAVEN-----
+
+Após baixar:
+mkdir /opt/maven = criando pasta com nome Maven
+unzip -d /opt/maven (nome do arquivo).zip = descompactando na pasta criada
+
