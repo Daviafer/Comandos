@@ -1,5 +1,8 @@
 Após instalação configurar email e nome
-git config --global
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
 
 Git init = iniciar repositório
 git add "nome arquivo" = adicionar 

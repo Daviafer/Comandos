@@ -1,10 +1,12 @@
 -----JAVA-----
 
-Após baixar JDK (salvando em outro disco)
+Após baixar JDK (salvando em outro disco ou pasta opt)
+
+sudo cp -r OpenJDK-16 /opt = copiando pasta descompactada pra /opt
 
 sudo gedit .bashrc
 
-export JAVA_HOME=/media/user/Dados/DaviF/EstudoJAVA/OpenJDK-16
+export JAVA_HOME=/opt/OpenJDK-16
 export PATH=$PATH:$JAVA_HOME/bin
 
 FECHAR TERMINAL OU ATUALIZAR COM :
@@ -25,21 +27,22 @@ menu: help / market place / java 16
 
 -----GRADLE-----
 
-Após baixar, descompactar o Gradle (salvando em outro disco)
+Baixar;
+mkdir /opt/gradle = OPCIONAL criando pasta no diretório /opt/
+unzip -d /opt/gradle gradle-7.0-bin.zip (ou a versão baixada)  = extrair e colocar aquivos na pasta criada
+
+OU
+
+sudo cp -r gradle-bin-7.0 /opt = copiando pasta descompactada pra /opt
+
+export PATH=$PATH:/opt/gradle/gradle-7.0/bin = (após reinicar sai, temporário) exportando arquivos do /bin pro PATH 
+
+OU "Definitivo"
 
 sudo gedit .bashrc
 
-export GRADLE_HOME=/media/user/Dados/DaviF/EstudoJAVA/gradle-bin-7.0/bin
-export PATH=/media/user/Dados/DaviF/EstudoJAVA/gradle-bin-7.0/bin:${PATH}
-
-OUTRA FORMA (mais simples, talvez)
-
-baixar arquivo webste oficial
-mkdir /opt/gradle = criando pasta no diretório /opt/
-abrir local que está o programa baixado
-unzip -d /opt/gradle gradle-7.0-bin.zip (ou a versão baixada)  = extrair e colocar aquivos na pasta criada
-ls /opt/gradle/gradle-7.0  = listar aquivos
-export PATH=$PATH:/opt/gradle/gradle-7.0/bin = exportando arquivos do /bin pro PATH
+export GRADLE_HOME=/opt/gradle-bin-7.0/bin
+export PATH=/opt/gradle-bin-7.0/bin:${PATH}
 
 
 ------MAVEN-----
