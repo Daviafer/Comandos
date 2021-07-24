@@ -44,10 +44,25 @@ sudo gedit .bashrc
 export GRADLE_HOME=/opt/gradle-bin-7.0/bin
 export PATH=/opt/gradle-bin-7.0/bin:${PATH}
 
+source .bashrc
+
 
 ------MAVEN-----
 
 Após baixar:
-mkdir /opt/maven = criando pasta com nome Maven
+mkdir /opt/maven = OPCIONAL criando pasta com nome Maven
 unzip -d /opt/maven (nome do arquivo).zip = descompactando na pasta criada
+
+OU
+sudo cp -r apache-maven-3.8.1 /opt = copiando pasta descompactada pra /opt
+
+sudo gedit .bashrc
+
+export GRADLE_HOME=/opt/apache-maven-3.8.1/bin
+export PATH=/opt/apache-maven-3.8.1/bin:${PATH}
+
+source .bashrc
+
+mvn -v = VERIFICAR INSTALAÇÃO
+
 
