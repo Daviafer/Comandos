@@ -18,6 +18,7 @@ git branch (nome da branch) = outro local, outra linha tempo (ramificação)
 git checkout (nome da branch) = mudando pra outra branch na linha do tempo
 git checkout (código commit) --(nome do arquivo = restaurando linha tempo do arquivo) 
 git merge (nome da branch) = Une arquivos de outra branch ao projeto master
+git branch -M master 
 git branch -D (nome da branch) = deletando branch
 
 git remote add origin (endereço https) = usando o GitHub
