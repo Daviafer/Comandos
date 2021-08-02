@@ -17,15 +17,17 @@ DICA:
 no arquivo ~/.profile ou mesmo ~/.bashrc (vale apenas pro seu usuário), no /etc/profile ou mesmo /etc/bash.bashrc (vale pra todos os usuários).
 após editar um desses arquivos você precisa fazer logoff e login novamente ou recarregar o ambiente alterado: source <arquivo alterado>
 
-
+-----------------
 -----ECLIPSE-----
+-----------------
 
 Precisa instalar puglin pra rodar o JDK versão 16.
 
 menu: help / market place / java 16 
 
-
+----------------
 -----GRADLE-----
+----------------
 
 Baixar;
 mkdir /opt/gradle = OPCIONAL criando pasta no diretório /opt/
@@ -46,8 +48,9 @@ export PATH=/opt/gradle-bin-7.0/bin:${PATH}
 
 source .bashrc
 
-
+----------------
 ------MAVEN-----
+----------------
 
 Após baixar:
 mkdir /opt/maven = OPCIONAL criando pasta com nome Maven
@@ -58,7 +61,7 @@ sudo cp -r apache-maven-3.8.1 /opt = copiando pasta descompactada pra /opt
 
 sudo gedit .bashrc
 
-export GRADLE_HOME=/opt/apache-maven-3.8.1/bin
+export MAVEN_HOME=/opt/apache-maven-3.8.1/bin
 export PATH=/opt/apache-maven-3.8.1/bin:${PATH}
 
 source .bashrc
