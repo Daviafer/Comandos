@@ -5,6 +5,7 @@ Após instalação configurar email e nome
 
 
 Git init = iniciar repositório
+git .
 git add "nome arquivo" = adicionar 
 git commit -m "mensagem" = comite com mensagem até o repositório
 git commit -am "mensagem" = adicionando e comitando 
