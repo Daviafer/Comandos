@@ -59,7 +59,7 @@ unzip -d /opt/maven (nome do arquivo).zip = descompactando na pasta criada
 OU
 sudo cp -r apache-maven-3.8.1 /opt = copiando pasta descompactada pra /opt
 
-sudo gedit .bashrc
+sudo gedit .bashrc 
 
 export MAVEN_HOME=/opt/apache-maven-3.8.1/bin
 export PATH=/opt/apache-maven-3.8.1/bin:${PATH}
