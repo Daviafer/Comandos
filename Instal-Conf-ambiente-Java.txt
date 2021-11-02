@@ -1,4 +1,6 @@
------JAVA-----
+-----------------
+-----JAVA--------
+-----------------
 
 Após baixar JDK (salvando em outro disco ou pasta opt)
 
