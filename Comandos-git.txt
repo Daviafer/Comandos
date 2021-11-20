@@ -23,7 +23,7 @@ git merge (nome da branch) = Une arquivos de outra branch ao projeto master
 git branch -M master 
 git branch -D (nome da branch) = deletando branch
 
-git remote add origin (endereço https) = usando o GitHub
+git remote add origin (endereço https) = Continuando projeto do GitHub
 git push -u origin master  = jogando arquivo locais pro github (repositório remoto)
 
 git clone (endereço) = clonando algum projeto já criado
