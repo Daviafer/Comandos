@@ -1,5 +1,6 @@
+
 -----------------
------JAVA--------
+------JAVA-------
 -----------------
 
 Após baixar JDK (salvando em outro disco ou pasta opt)
@@ -69,5 +70,4 @@ export PATH=/opt/apache-maven-3.8.1/bin:${PATH}
 source .bashrc
 
 mvn -v = VERIFICAR INSTALAÇÃO
-
 
