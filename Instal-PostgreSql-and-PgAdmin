@@ -1,0 +1,61 @@
+-----------------------
+------ PostgreSQL -----
+-----------------------
+
+- Instal website oficial
+
+# Create the file repository configuration:
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+
+# Import the repository signing key:
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+# Update the package lists:
+sudo apt-get update
+
+sudo apt-get -y install postgresql
+
+
+----- Verificando instalação -----
+
+sudo systemctl status postgresql
+
+psql --version
+
+OU - entrar no banco de dados:
+
+sudo -i -u postgres
+psql
+\l
+
+- sair da lista
+ctrl+z
+
+----- Ativando e desativando -----
+
+sudo service postgresql start
+sudo service postgresql stop
+
+
+
+-----------------------
+------- PgAdmin -------
+-----------------------
+
+- Instal website oficial
+
+- Install the public key for the repository (if not done previously):
+- Precisa instalar 'curl' (caso não tenha instalado)
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+
+- Create the repository configuration file:
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+
+- Install for both desktop and web modes:
+sudo apt install pgadmin4
+
+
+----- Verificando instalação via navegador -----
+
+http://127.0.0.1:42309/browser/
+

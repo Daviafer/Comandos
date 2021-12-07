@@ -1,0 +1,97 @@
+==========================
+	MySql server
+==========================
+
+- Pegando do repositório oficial em .deb
+wget -c https://repo.mysql.com//mysql-apt-config_0.8.20-1_all.deb
+
+- Extraindo
+sudo dpkg -i mysql-apt-config_0.8.20-1_all.deb
+
+sudo apt update
+
+- Instalando e configuração
+sudo apt install mysql-server
+
+- Script para configurar instalação segura MySql
+sudo mysql_secure_installation
+
+1 - colocar senha mysql
+2 - (validar senha) enter
+3 - (senha root) enter
+4 - (remover user anonimos) y
+5 - (desabiliar root remoto) y
+6 - (remover banco dados teste) y
+7 - (recarregar) y 
+
+------- OU -------
+
+sudo apt update
+sudo apt install mysql-server 
+
+======================== OUTRAS CONFIGURAÇÕES ========================
+
+service mysql status 		= verificando status
+
+service mysql start		= iniciando serviço
+service mysql stop		= parando serviço
+
+mysql -u root -p		= entando no banco
+SHOW DATABASES (depois ; )	= mostrando bancos
+
+==========================
+Alterando iniciação
+sudo nano /etc/init/mysql_conf
+comentar: start on
+
+outra forma:
+sudo systemctl disable mysql	= ainda não testado 
+
+==========================
+CASO TENHA PROBLEMA AO CONECTA NO WORKBENCH
+Entrar no MySql:
+
+sudo mysql
+
+USE mysql
+ 
+UPDATE user SET plugin='mysql_native_password' WHERE User='root'; 
+FLUSH PRIVILEGES;
+
+Alterando usuário com senha em caching_sha2_password (mais forte)
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+FLUSH PRIVILEGES;
+exit;
+
+sudo service mysql restart
+sudo /etc/init.d/mysql stop 
+sudo /etc/init.d/mysql start
+
+------- REMOVENDO ------ 
+
+sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+
+sudo apt-get remove mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+
+sudo rm -rf /etc/mysql /var/lib/mysql
+
+
+
+==========================
+	MySQL Workbench
+==========================
+
+--- forma 1 ---
+sudo apt install mysql-workbench-community
+
+--- forma 2 ---
+
+- Ir no website oficial e baixar o arquivo .deb
+wget http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_8.0.25-1ubuntu20.04_amd64.deb -O mysql-workbench-community.deb
+
+- Descompactando o arquivo baixado
+sudo dpkg -i mysql-workbench-community.deb
+sudo apt -f install	= atualizando as dependências
+
+- Desinstalar
+sudo apt-get remove mysql-workbench-community
