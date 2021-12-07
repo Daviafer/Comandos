@@ -15,7 +15,7 @@ git log = verificar mudanças commit
 git show (código do comite) = verificar através do código o commit
 
 git rm -r --cached NOMEARQUIVOPASTA	= excluindo somente do git
-echo "NOME IGNORADO" >> .gitignore
+echo NOME IGNORADO >> .gitignore
 
 ls -al = verificar todos arquivos no local
 
