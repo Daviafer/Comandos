@@ -4,15 +4,18 @@ Após instalação configurar email e nome
   git config --global user.name "Your Name"
 
 
-
-Git init = iniciar repositório
-git .
+echo "# teste" README.md
+git init 	= iniciar repositório
+git add . 	= adicionar tudo
 git add "nome arquivo" = adicionar 
 git commit -m "mensagem" = comite com mensagem até o repositório
 git commit -am "mensagem" = adicionando e comitando 
 git status = verificar arquivos
 git log = verificar mudanças commit
 git show (código do comite) = verificar através do código o commit
+
+git rm -r --cached NOMEARQUIVOPASTA	= excluindo somente do git
+echo "NOME IGNORADO" >> .gitignore
 
 ls -al = verificar todos arquivos no local
 
@@ -23,7 +26,7 @@ git merge (nome da branch) = Une arquivos de outra branch ao projeto master
 git branch -M master 
 git branch -D (nome da branch) = deletando branch
 
-git remote add origin (endereço https) = usando o GitHub
+git remote add origin (endereço https) = Continuando projeto do GitHub
 git push -u origin master  = jogando arquivo locais pro github (repositório remoto)
 
 git clone (endereço) = clonando algum projeto já criado
