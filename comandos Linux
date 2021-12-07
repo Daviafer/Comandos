@@ -1,0 +1,15 @@
+Comandos 
+
+chmod -R 777 diretorio	= dar permissão pra pasta e suas subpastas (-R de recursivo)
+
+=======================================================
+Como executar um arquivo . SH pelo terminal
+chmod +x filename.sh.
+./filename.sh.
+=======================================================
+
+Encontar arquivo ou similar
+sudo find -iname nomedoarquivo	= ignorando case sensitive
+=======================================================
+
+
