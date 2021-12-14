@@ -27,6 +27,12 @@ psql --version
 
 OU - entrar no banco de dados:
 
+sudo su postgres
+\l		- listar (pra sair da listagem: shift, dois pontos, q)
+\password	- trocar senha
+\q		- sair
+psql -Upostgres -hlocalhost	- entrando
+
 sudo -i -u postgres
 psql
 create user admin password 'admin';
