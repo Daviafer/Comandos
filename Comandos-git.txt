@@ -31,4 +31,5 @@ git push -u origin master  = jogando arquivo locais pro github (repositório rem
 
 git clone (endereço) = clonando algum projeto já criado
 
+git pull origin master
 git pull = atualizando o local (importante na área de vários desenvolvedores)
