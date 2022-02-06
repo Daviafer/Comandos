@@ -13,6 +13,7 @@ git commit -am "mensagem" = adicionando e comitando
 git status = verificar arquivos
 git log = verificar mudanças commit
 git show (código do comite) = verificar através do código o commit
+git checkout "nome do arquivo" = recuperando algum arquivo excluído
 
 git config --list	= listando configurações
 
