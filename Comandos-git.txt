@@ -15,6 +15,8 @@ git log = verificar mudanças commit
 git show (código do comite) = verificar através do código o commit
 git checkout "nome do arquivo" = recuperando algum arquivo excluído
 
+git remote -v	= verifica o link 
+
 git config --list	= listando configurações
 
 git rm -r --cached NOMEARQUIVOPASTA	= excluindo somente do git
