@@ -2,7 +2,21 @@ Após instalação configurar email e nome
 
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
+  
+-----------------------------------------------------  
+------------ Processo indicado pelo gitHub
+-----------------------------------------------------
+echo "# teste" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/Daviafer/teste.git
+git push -u origin master
 
+-----------------------------------------------------  
+------------ Geral
+-----------------------------------------------------
 
 echo "# teste" >> README.md
 git init 	= iniciar repositório
