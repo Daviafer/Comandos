@@ -25,11 +25,39 @@ git add "nome arquivo" = adicionar
 git commit -m "mensagem" = comite com mensagem até o repositório
 git commit -am "mensagem" = adicionando e comitando 
 git status = verificar arquivos
-git log = verificar mudanças commit
 git show (código do comite) = verificar através do código o commit
 git checkout "nome do arquivo" = recuperando algum arquivo excluído
+-------------------------------  
+------------ Histórico
+-------------------------------
+git log = verificar mudanças commit
+git log -p ArquivoTal	= mostrar mudanças ao longo do tempo
+git blame ArquivoTal	= mostrar quem alterou o quê e quando
 
-git remote -v	= verifica o link 
+-------------------------------  
+------------ Branches
+-------------------------------
+- git branch (nome da branch) = outro local, outra linha tempo (ramificação)
+- git checkout (nome da branch) = mudando pra outra branch na linha do tempo
+- git checkout (código commit) --(nome do arquivo = restaurando linha tempo do arquivo) 
+- git branch -M master	= Declarando a branch
+- git merge (nome da branch) = Une arquivos de outra branch ao projeto master
+- git branch -D (nome da branch) = deletando branch
+
+-------------------------------  
+------------ Atualizar e publicar
+-------------------------------
+- git remote add origin (endereço https) = Continuando projeto do GitHub
+- git remote -v	= verifica o link (controles remotos configurados)
+- git remote show <remote>	= mostrar informações de um controle remoto
+- git remote add <shortname> <url>	= add novo repositório remoto denomimado remoto
+- git push -u origin master  = jogando arquivo locais pro github (repositório remoto)
+- git pull origin master
+- git pull = atualizando o local (importante na área de vários desenvolvedores)
+
+-------------------------------  
+------------ Diversos
+-------------------------------
 
 git config --list	= listando configurações
 
@@ -38,17 +66,5 @@ echo NOME_IGNORADO >> .gitignore
 
 ls -al = verificar todos arquivos no local
 
-git branch (nome da branch) = outro local, outra linha tempo (ramificação)
-git checkout (nome da branch) = mudando pra outra branch na linha do tempo
-git checkout (código commit) --(nome do arquivo = restaurando linha tempo do arquivo) 
-git merge (nome da branch) = Une arquivos de outra branch ao projeto master
-git branch -M master 
-git branch -D (nome da branch) = deletando branch
-
-git remote add origin (endereço https) = Continuando projeto do GitHub
-git push -u origin master  = jogando arquivo locais pro github (repositório remoto)
-
 git clone (endereço) = clonando algum projeto já criado
 
-git pull origin master
-git pull = atualizando o local (importante na área de vários desenvolvedores)
