@@ -1,0 +1,22 @@
+--------------------- VS CODE
+1- Baixe a última versão e salve como vscode.tar.gz
+	wget *“*[<https://go.microsoft.com/fwlink/?LinkID=620884>](<https://go.microsoft.com/fwlink/?LinkID=620884>)*” -O vscode.tar.gz*
+	
+2- Descompactar o arquivo copiando pra /opt/
+	sudo tar -vzxf vscode.tar.gz -C /opt/
+
+3- Crie um atalho para facilitar a execução do programa:
+	sudo ln -sf /opt/vscode/code /usr/bin/code
+	
+	
+--------------------- NODE
+1- Via WGET: (verificar versão mais recente)
+	wget -qO- <https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh> | bash
+	
+2- Instalar a versão mais recente (latest)
+	nvm install --lts
+
+3- atualizando NPM
+	npm i npm -g
+
+

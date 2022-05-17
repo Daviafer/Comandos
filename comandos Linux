@@ -12,4 +12,6 @@ Encontar arquivo ou similar
 sudo find -iname nomedoarquivo	= ignorando case sensitive
 =======================================================
 
+more arquivo.txt	= mostrar conteúdo arquivo
+
 
