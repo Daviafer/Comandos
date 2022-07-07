@@ -52,12 +52,15 @@ git blame ArquivoTal	= mostrar quem alterou o quê e quando
 - git remote show <remote>	= mostrar informações de um controle remoto
 - git remote add <shortname> <url>	= add novo repositório remoto denomimado remoto
 - git push -u origin master  = jogando arquivo locais pro github (repositório remoto)
+- git remote set-url origin url-do-github-novo	= atualizando url do repositório
 - git pull origin master
 - git pull = atualizando o local (importante na área de vários desenvolvedores)
 
 -------------------------------  
 ------------ Diversos
 -------------------------------
+
+@builtin	= Windows - Verifica se as extensões do git estão ativadas
 
 git config --list	= listando configurações
 
