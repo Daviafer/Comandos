@@ -10,6 +10,19 @@
 	
 	
 --------------------- NODE
+Oficial Github:
+https://github.com/nodesource/distributions/blob/master/README.md
+
+1- Using Ubuntu:
+	curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+	sudo apt-get install -y nodejs
+
+Using Debian, as root:
+	curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+	apt-get install -y nodejs
+
+
+
 1- Via WGET: (verificar versão mais recente)
 	wget -qO- <https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh> | bash
 	
@@ -18,5 +31,7 @@
 
 3- atualizando NPM
 	npm i npm -g
+	
+	
 
 
