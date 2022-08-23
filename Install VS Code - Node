@@ -1,4 +1,6 @@
---------------------- VS CODE
+---------------------
+- - - VS CODE
+---------------------
 1- Baixe a última versão e salve como vscode.tar.gz
 	wget *“*[<https://go.microsoft.com/fwlink/?LinkID=620884>](<https://go.microsoft.com/fwlink/?LinkID=620884>)*” -O vscode.tar.gz*
 	
@@ -9,7 +11,9 @@
 	sudo ln -sf /opt/vscode/code /usr/bin/code
 	
 	
---------------------- NODE
+---------------------
+- - - NODE
+---------------------
 Oficial Github:
 https://github.com/nodesource/distributions/blob/master/README.md
 
@@ -32,6 +36,14 @@ Using Debian, as root:
 3- atualizando NPM
 	npm i npm -g
 	
-	
+---------------------
+= = = ATUALIZANDO
 
+npm -v      = verifica a versão
+npm install npm@latest –g       = atualiza
+sudo npm cache clean -f     = limpando a "migalha (cache)"
 
+sudo npm install -g n   = instalando módulo node
+sudo n stable   = instalando versão recente node estável
+OU
+sudo n latest    = última versão independente do estável ou não
