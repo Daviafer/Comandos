@@ -12,6 +12,8 @@ Encontar arquivo ou similar
 sudo find -iname nomedoarquivo	= ignorando case sensitive
 =======================================================
 
+touch arquivo.txt	= criar arquivo
+xdg-open arquivo.txt	= abrir com app padrão
 more arquivo.txt	= mostrar conteúdo arquivo
 
 
